@@ -43,4 +43,42 @@
 		</portlet-info>
 	</portlet>
 
+	<portlet>
+		<description>springmyfaces</description>
+
+		<portlet-name>springmyfaces</portlet-name>
+
+		<display-name>springmyfaces</display-name>
+
+		<portlet-class>org.apache.portals.bridges.jsf.FacesPortlet</portlet-class>
+
+		<init-param>
+			<name>ViewPage</name>
+			<value>/WEB-INF/springmyfaces/view.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>HelpPage</name>
+			<value>/WEB-INF/springmyfaces/help.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>EditPage</name>
+			<value>/WEB-INF/springmyfaces/edit.jsp</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+
+		<portlet-info>
+			<title>myfaces11</title>
+			<short-title>springmyfaces</short-title>
+			<keywords>springmyfaces</keywords>
+		</portlet-info>
+	</portlet>
+
 </portlet-app>
