@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<portlet-app version="1.0"
+	xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+	<portlet>
+		<description>myfaces11</description>
+		<portlet-name>myfaces11</portlet-name>
+		<display-name>myfaces11</display-name>
+		<portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.view</name>
+			<value>/WEB-INF/myfaces11/view.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>javax.portlet.faces.defaltViewId.edit</name>
+			<value>/WEB-INF/myfaces11/edit.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>javax.portlet.faces.defaultViewId.help</name>
+			<value>/WEB-INF/myfaces11/help.jsp</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>
+		</supports>
+
+		<portlet-info>
+			<title>myfaces11</title>
+			<short-title>myfaces11</short-title>
+		</portlet-info>
+	</portlet>
+
+	<!-- <portlet> -->
+	<!-- <description lang="EN">MyFaces Portlet Bridge Tempate Portlet</description> -->
+	<!-- <portlet-name>portlet-bridge-blank</portlet-name> -->
+	<!-- <display-name lang="EN">MyFaces Portlet Bridge Template</display-name> -->
+	<!-- <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class> -->
+
+	<!-- <init-param> -->
+	<!-- <name>javax.portlet.faces.defaultViewId.view</name> -->
+	<!-- <value>/index.jsp</value> -->
+	<!-- </init-param> -->
+
+	<!-- <init-param> -->
+	<!-- <name>javax.portlet.faces.defaltViewId.edit</name> -->
+	<!-- <value>/edit.jsp</value> -->
+	<!-- </init-param> -->
+
+	<!-- <init-param> -->
+	<!-- <name>javax.portlet.faces.defaultViewId.help</name> -->
+	<!-- <value>/help.jsp</value> -->
+	<!-- </init-param> -->
+
+	<!-- <supports> -->
+	<!-- <mime-type>text/html</mime-type> -->
+	<!-- <portlet-mode>edit</portlet-mode> -->
+	<!-- <portlet-mode>view</portlet-mode> -->
+	<!-- <portlet-mode>help</portlet-mode> -->
+	<!-- </supports> -->
+
+	<!-- <supported-locale>en</supported-locale> -->
+
+	<!-- <portlet-info> -->
+	<!-- <title>MyFaces Portlet Bridge Template</title> -->
+	<!-- <short-title>Bridge Template</short-title> -->
+	<!-- </portlet-info> -->
+	<!-- </portlet> -->
+
+
+</portlet-app>

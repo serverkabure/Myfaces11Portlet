@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app id="jsf-demo"
+	xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" version="1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd 
+    http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+	<portlet>
+		<description>myfaces11</description>
+
+		<portlet-name>myfaces11</portlet-name>
+
+		<display-name>myfaces11</display-name>
+
+		<portlet-class>org.apache.portals.bridges.jsf.FacesPortlet</portlet-class>
+
+		<init-param>
+			<name>ViewPage</name>
+			<value>/WEB-INF/myfaces11/view.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>HelpPage</name>
+			<value>/WEB-INF/myfaces11/help.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>EditPage</name>
+			<value>/WEB-INF/myfaces11/edit.jsp</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+
+		<portlet-info>
+			<title>myfaces11</title>
+			<short-title>myfaces11</short-title>
+			<keywords>myfaces11</keywords>
+		</portlet-info>
+	</portlet>
+
+</portlet-app>
