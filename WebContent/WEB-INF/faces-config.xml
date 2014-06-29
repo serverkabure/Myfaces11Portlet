@@ -27,6 +27,12 @@
 			<value>#{num}</value>
 		</managed-property>
 	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>list</managed-bean-name>
+		<managed-bean-class>tomahawk.SimpleSortableCarList</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
 	<!-- <application> <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver> 
 		</application> -->
 	<application>

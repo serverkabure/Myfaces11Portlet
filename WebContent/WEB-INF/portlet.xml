@@ -6,12 +6,7 @@
     http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
 
 	<portlet>
-		<description>myfaces11</description>
-
 		<portlet-name>myfaces11</portlet-name>
-
-		<display-name>myfaces11</display-name>
-
 		<portlet-class>org.apache.portals.bridges.jsf.FacesPortlet</portlet-class>
 
 		<init-param>
@@ -38,18 +33,11 @@
 
 		<portlet-info>
 			<title>myfaces11</title>
-			<short-title>myfaces11</short-title>
-			<keywords>myfaces11</keywords>
 		</portlet-info>
 	</portlet>
 
 	<portlet>
-		<description>springmyfaces</description>
-
 		<portlet-name>springmyfaces</portlet-name>
-
-		<display-name>springmyfaces</display-name>
-
 		<portlet-class>org.apache.portals.bridges.jsf.FacesPortlet</portlet-class>
 
 		<init-param>
@@ -75,9 +63,38 @@
 		</supports>
 
 		<portlet-info>
-			<title>myfaces11</title>
-			<short-title>springmyfaces</short-title>
-			<keywords>springmyfaces</keywords>
+			<title>springmyfaces</title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<portlet-name>tomahawk</portlet-name>
+		<portlet-class>org.apache.portals.bridges.jsf.FacesPortlet</portlet-class>
+
+		<init-param>
+			<name>ViewPage</name>
+			<value>/WEB-INF/tomahawk/view.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>HelpPage</name>
+			<value>/WEB-INF/tomahawk/help.jsp</value>
+		</init-param>
+
+		<init-param>
+			<name>EditPage</name>
+			<value>/WEB-INF/tomahawk/edit.jsp</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+
+		<portlet-info>
+			<title>tomahawk</title>
 		</portlet-info>
 	</portlet>
 
