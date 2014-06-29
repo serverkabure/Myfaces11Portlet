@@ -29,10 +29,8 @@ public class SimpleSortableCarList extends SortableList {
 	}
 
 	protected void sort(final String column, final boolean ascending) {
-		Comparator<Object> comparator = new Comparator<Object>() {
-			public int compare(Object o1, Object o2) {
-				SimpleCar c1 = (SimpleCar) o1;
-				SimpleCar c2 = (SimpleCar) o2;
+		Comparator<SimpleCar> comparator = new Comparator<SimpleCar>() {
+			public int compare(SimpleCar c1, SimpleCar c2) {
 				if (column == null) {
 					return 0;
 				}

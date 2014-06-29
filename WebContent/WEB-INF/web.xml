@@ -41,10 +41,10 @@
 	</filter>
 
 	<!-- Filter Mappings -->
-	<!-- <filter-mapping> -->
-	<!-- <filter-name>extensionsFilter</filter-name> -->
-	<!-- <url-pattern>*.jsf</url-pattern> -->
-	<!-- </filter-mapping> -->
+	<filter-mapping>
+		<filter-name>extensionsFilter</filter-name>
+		<url-pattern>*.jsf</url-pattern>
+	</filter-mapping>
 	<filter-mapping>
 		<filter-name>extensionsFilter</filter-name>
 		<url-pattern>/faces/*</url-pattern>
@@ -53,6 +53,11 @@
 	<!-- Add Support for Spring -->
 	<listener>
 		<listener-class> org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Listener, that does all the startup work (configuration, init). -->
+	<listener>
+		<listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
 	</listener>
 
 	<!-- Faces Servlet -->
@@ -65,7 +70,7 @@
 	<!-- Faces Servlet Mapping -->
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
-		<url-pattern>/faces/*</url-pattern>
+		<url-pattern>*.jsf</url-pattern>
 	</servlet-mapping>
 
 </web-app>
